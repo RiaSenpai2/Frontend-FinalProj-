@@ -26,7 +26,7 @@ export default function AdminLogin() {
           initialValues={{ email: '', password: '' }}
           validationSchema={AdminLoginSchema}
           onSubmit={(values, { setSubmitting }) => {
-            fetch("https://backend-luggshare3.onrender.com/api/admin/login", { 
+            fetch(`${process.env.REACT_APP_BACKEND_HOST_URL}/api/admin/login`, { 
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

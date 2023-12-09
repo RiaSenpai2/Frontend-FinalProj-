@@ -40,7 +40,7 @@ export default function Login() {
           initialValues={{ email: '', password: '' }}
           validationSchema={LoginSchema}
           onSubmit={(values, { setSubmitting }) => {
-            fetch("https://backend-luggshare3.onrender.com/api/user/login", {
+            fetch(`${process.env.REACT_APP_BACKEND_HOST_URL}/api/user/login`, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

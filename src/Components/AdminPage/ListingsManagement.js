@@ -8,7 +8,7 @@ const ListingsManagement = ({ closePopup }) => {
     useEffect(() => {
         const fetchListings = async () => {
             try {
-                const response = await axios.get('https://backend-luggshare3.onrender.com/api/listings');
+                const response = await axios.get(`${process.env.REACT_APP_BACKEND_HOST_URL}/api/listings`);
                 console.log('Fetched Listings:', response.data); 
                 setListings(response.data);
             } catch (error) {
@@ -21,7 +21,7 @@ const ListingsManagement = ({ closePopup }) => {
 
     const deleteListing = async (listingId) => {
         try {
-            await axios.delete(`https://backend-luggshare3.onrender.com/api/listings/${listingId}`);
+            await axios.delete(`${process.env.REACT_APP_BACKEND_HOST_URL}/api/listings/${listingId}`);
             const updatedListings = listings.filter((listing) => listing.id !== listingId);
             setListings(updatedListings);
         } catch (error) {

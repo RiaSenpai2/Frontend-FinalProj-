@@ -58,7 +58,7 @@
 //         e.preventDefault();
 //         if (validateForm()) {
 //             try {
-//                 const response = await axios.post('https://backend-luggshare3.onrender.com/api/listings', formData);
+//                 const response = await axios.post('${process.env.REACT_APP_BACKEND_HOST_URL}/api/listings', formData);
 //                 console.log(response.data);
 //                 setFormData(initialFormData);
 //                 setShowModal(true);
@@ -282,7 +282,7 @@ const Seller = () => {
         e.preventDefault();
         if (validateForm()) {
             try {
-                const response = await axios.post('https://backend-luggshare3.onrender.com/api/listings', formData);
+                const response = await axios.post(`${process.env.REACT_APP_BACKEND_HOST_URL}/api/listings`, formData);
                 console.log(response.data);
                 setFormData(initialFormData);
                 setShowModal(true);
