@@ -1,0 +1,202 @@
+/* Header.css */
+.header {
+    background-color: #fff; /* Change as per your color scheme */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: relative;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.welcome {
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: #333; /* Adjust the color as needed */
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+    height: 40px; /* Adjust the size as needed */
+}
+
+.navbar-brand span {
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #333;
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.getstarted {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.getstarted:hover {
+    background-color: #0056b3;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #007bff; /* Adjust the color as needed */
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+/* Dropdown styles */
+.nav-dropdown {
+    background-color: #f8f9fa; /* Adjust the dropdown background */
+}
+
+.nav-dropdown .dropdown-item {
+    color: #333; /* Adjust the dropdown item text color */
+}
+
+.nav-dropdown .dropdown-item:hover {
+    background-color: #007bff; /* Adjust the hover background */
+    color: #fff; /* Adjust the hover text color */
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: #007bff;
+}
+
+.breadcrumb-item a:hover {
+    color: #0056b3;
+}
+
+/* Custom button styles */
+.btn-login, .btn-signup, .btn-logout {
+    padding: 5px 15px;
+    margin-left: 10px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn-login {
+    background-color: #007bff; /* Primary color */
+    text-decoration: none; /* Removes underline */
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.btn-signup {
+    background-color: #007bff; /* Success color */
+}
+
+.btn-signup:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.btn-logout {
+    background-color: #dc3545; /* Danger color */
+    color: white;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: #c82333; /* Darker shade for hover effect */
+}
+
+/* Additional styles */
+/* Add any additional styles you might need here */
+
+/* Mobile-Friendly Styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .navbar-brand img {
+        height: 30px; /* Adjust image height for smaller screens */
+    }
+
+    .navbar-nav {
+        margin-left: 0;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    .getstarted {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .btn-logout {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .navbar-brand img {
+        height: 30px; /* Adjust image height for smaller screens */
+        display: block; /* Remove the image when it's hidden */
+    }
+
+    .navbar-nav {
+        margin-left: 0;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    .getstarted {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+        margin-left: 0; /* Remove left margin for spacing */
+    }
+
+    .btn-logout {
+        padding: 5px 10px; /* Adjust padding for smaller screens */
+        margin-left: 5px; /* Add some left margin for spacing */
+    }
+
+    /* Remove the logo when the viewport width is less than or equal to 350px */
+    @media (max-width: 350px) {
+       
+
+        .company{
+            display: none;
+        }
+    }
+}

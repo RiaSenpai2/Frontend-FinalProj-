@@ -1,0 +1,152 @@
+/* General Container Styles */
+.buyer-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search Form Styles */
+.search-form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.small-search-btn {
+    padding: 5px 10px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+
+/* Card Body Styles */
+.card-body {
+    background-image: url('../assets/img/bg.jpg'); /* Update the path as per your project structure */
+    background-size: cover; /* Cover ensures that the background covers the entire element */
+    background-position: center; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+/* Footer Content for Symmetry */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e9ecef;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-content > span {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+}
+
+/* Button positioned at the far right */
+.footer-content > .btn-primary {
+    margin-left: 20px; /* Space between text and button */
+}
+
+/* Listing Styles */
+.g-4 {
+    gap: 15px;
+}
+
+/* Date Picker Styles */
+.date-picker-col {
+    display: flex;
+    align-items: center;
+}
+
+.react-datepicker-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.react-datepicker__input-container {
+    width: 100%;
+}
+
+.react-datepicker {
+    font-family: inherit;
+}
+
+
+/* Listing Title */
+.listing-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+/* Departure and Destination City Styles */
+.dept-listing-city, .dest-listing-city {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+.dept-listing-city {
+    justify-content: flex-start;
+
+}
+
+.dest-listing-city {
+    justify-content: flex-end;
+}
+
+.city-image {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.city-name {
+    font-size: 1.2em;
+}
+
+.listing-date-time, .listing-space-price {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.flight-num{
+    text-align: right;
+    color: white;
+}
+
+.listing-space-price {
+    font-weight: bold;
+}
+
+.card:hover {
+    background-color: #fff; /* Slightly lighter or different color */
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.25); /* Slightly larger shadow for a 'lifted' effect */
+    transform: translateY(-5px); /* Optional: slight upward movement */
+    transition: all 0.3s ease; /* Smooth transition for the effect */
+}
