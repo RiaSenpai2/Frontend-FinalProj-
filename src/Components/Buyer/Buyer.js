@@ -40,7 +40,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
     const fetchListings = async () => {
         try {
-            const response = await axios.get('http://localhost:5001/api/listings');
+            const response = await axios.get('https://backend-luggshare3.onrender.com/api/listings');
             setListings(response.data);
         } catch (error) {
             console.error("Error fetching data:", error);
@@ -100,7 +100,7 @@ import 'react-toastify/dist/ReactToastify.css';
                 return;
             }
         
-            const result = await axios.post("http://localhost:5001/order", { amount: listingPrice });
+            const result = await axios.post("https://backend-luggshare3.onrender.com/order", { amount: listingPrice });
         
             if (!result) {
                 alert("Server error. Are you online?");
@@ -125,7 +125,7 @@ import 'react-toastify/dist/ReactToastify.css';
                         razorpaySignature: response.razorpay_signature,
                     };
         
-                    const result = await axios.post("http://localhost:5001/order/success", data);
+                    const result = await axios.post("https://backend-luggshare3.onrender.com/order/success", data);
                     console.log(result);
                     toast.success("🦄 Thanks for the purchase!!", {
                         onClose: () => navigate("/")

@@ -11,7 +11,7 @@ const ResetPassword = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.put('http://localhost:5001/api/user/change-password', {
+            const response = await axios.put('https://backend-luggshare3.onrender.com/api/user/change-password', {
                 email,
                 oldPassword,
                 newPassword

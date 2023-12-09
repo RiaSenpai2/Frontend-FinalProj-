@@ -25,7 +25,7 @@ const UserManagement = ({ closePopup }) => {
 
     const fetchUsers = async () => {
         try {
-            const response = await axios.get('http://localhost:5001/api/user');
+            const response = await axios.get('https://backend-luggshare3.onrender.com/api/user');
             setUsers(response.data);
         } catch (error) {
             console.error('Error fetching users:', error);
@@ -34,7 +34,7 @@ const UserManagement = ({ closePopup }) => {
 
     const deleteUser = async (userId) => {
         try {
-            await axios.delete(`http://localhost:5001/api/user/${userId}`);
+            await axios.delete(`https://backend-luggshare3.onrender.com/api/user/${userId}`);
             const updatedUsers = users.filter((user) => user._id !== userId);
             setUsers(updatedUsers);
         } catch (error) {
@@ -45,7 +45,7 @@ const UserManagement = ({ closePopup }) => {
 
     // const updateUserDetails = async (updatedUser) => {
     //     try {
-    //         const response = await axios.put(`http://localhost:5001/api/user/${updatedUser._id}`, updatedUser);
+    //         const response = await axios.put(`https://backend-luggshare3.onrender.com/api/user/${updatedUser._id}`, updatedUser);
     //         console.log('Updated user details:', response.data);
     //         setShowModal(false);
     //         fetchUsers(); // Refresh the user list

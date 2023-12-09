@@ -34,7 +34,7 @@ export default function SignUp() {
           validationSchema={SignupSchema}
           onSubmit={(values, { setSubmitting, setFieldError }) => {
             console.log("Sending data to backend:", values);
-            fetch("http://localhost:5001/api/user/register", {
+            fetch("https://backend-luggshare3.onrender.com/api/user/register", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
